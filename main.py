@@ -26,9 +26,9 @@ class MenagerPolaczen:
 
 class TestDzwoniacego(TestCase):
   def test_abonent_rozpoznany_jako_gadula_poprawnie(self):
-    lp= ManagerPolaczen("phoneCalls.csv")
+    lp= MenagerPolaczen("phoneCalls.csv")
     rezultat= lp.pokaz_gadule()
     self.assertEqual((226,5), rezultat)
 
 if __name__ == "__main__":
-    print(ManagerPolaczen(input()).pobierz_najczesciej_dzwoniacego())
+    print(MenagerPolaczen(input()).pobierz_najczesciej_dzwoniacego())
